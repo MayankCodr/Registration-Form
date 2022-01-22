@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="">
+        <div class="container">
+            <h1>Registration Form</h1>
+            <p>This form is used to create an account.</p>
+            <hr>
+            <label for="uname"><b>Name</b></label>
+            <input type="text" name="uname" id="uname" placeholder="Enter your full name." required>
+            <label for="email"><b>Email</b></label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email." required>
+            <label for="pwd"><b>Password</b></label>
+            <input type="password" name="pwd" id="pwd" placeholder="Enter your Password." onblur="checkpwdpat()" required>
+
+            <label id="wpwd">The Password must contain atleast 1 uppercase,1 lowercase, 1 number, 1 symbol and minimum 6 characters.</label>
+            <hr>
+            <p>By filling this form you accept to the <a href="#">Terms and Conditions</a></p>
+            <button type="button" id="registerbtn" onclick="reg()">Register</button>
+            <label id="success">Registration Successful</label>
+            <footer>Copyright2021&copy; All rights are reserved</footer>
+            
+        </div>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
